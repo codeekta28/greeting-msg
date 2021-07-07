@@ -1,7 +1,8 @@
 console.log("This is app.js file")
 
-let currentDate = new Date("23 july 2020 14:32:43");
+let currentDate = new Date();
 let hours=currentDate.getHours();
+console.log(hours);
 let userName = prompt("Enter your name");
 
 document.querySelector("#userName").innerHTML = userName;
@@ -17,6 +18,7 @@ function greetingCalculate(){
         greetingsShow("Good Night","Red");
     }
 }
+
 greetingCalculate();
 
 function greetingsShow(message,color){
